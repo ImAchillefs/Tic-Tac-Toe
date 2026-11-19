@@ -10,76 +10,6 @@ const seven = document.getElementById("seven");
 const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
 
-//let green = ((
-//one.style.backgroundColor === "green" &&
-//two.style.backgroundColor === "green" &&
-//three.style.backgroundColor === "green" 
-//) || (
-//four.style.backgroundColor === "green" &&
-//five.style.backgroundColor === "green" &&
-//six.style.backgroundColor === "green" 
-//) || (
-//seven.style.backgroundColor === "green" &&
-//eight.style.backgroundColor === "green" &&
-//nine.style.backgroundColor === "green" 
-//) || (
-//one.style.backgroundColor === "green" &&
-//four.style.backgroundColor === "green" &&
-//seven.style.backgroundColor === "green" 
-//) || (
-//two.style.backgroundColor === "green" &&
-//five.style.backgroundColor === "green" &&
-//eight.style.backgroundColor === "green" 
-//) || (
-//three.style.backgroundColor === "green" &&
-//six.style.backgroundColor === "green" &&
-//nine.style.backgroundColor === "green" 
-//) || (
-//one.style.backgroundColor === "green" &&
-//five.style.backgroundColor === "green" &&
-//nine.style.backgroundColor === "green"
-//) || (
-//three.style.backgroundColor === "green" &&
-//five.style.backgroundColor === "green" &&
-//seven.style.backgroundColor === "green" 
-//)
-//);
-//
-//let red = ((
-//one.style.backgroundColor === "red" &&
-//two.style.backgroundColor === "red" &&
-//three.style.backgroundColor === "red" 
-//) || (
-//four.style.backgroundColor === "red" &&
-//five.style.backgroundColor === "red" &&
-//six.style.backgroundColor === "red" 
-//) || (
-//seven.style.backgroundColor === "red" &&
-//eight.style.backgroundColor === "red" &&
-//nine.style.backgroundColor === "red"
-//) || (
-//one.style.backgroundColor === "red" &&
-//four.style.backgroundColor === "red" &&
-//seven.style.backgroundColor === "red" 
-//) || (
-//two.style.backgroundColor === "red" &&
-//five.style.backgroundColor === "red" &&
-//eight.style.backgroundColor === "red" 
-//) || (
-//three.style.backgroundColor === "red" &&
-//six.style.backgroundColor === "red" &&
-//nine.style.backgroundColor === "red" 
-//) || (
-//one.style.backgroundColor === "red" &&
-//five.style.backgroundColor === "red" &&
-//nine.style.backgroundColor === "red"
-//) || (
-//three.style.backgroundColor === "red" &&
-//five.style.backgroundColor === "red" &&
-//seven.style.backgroundColor === "red" 
-//)
-//);
-
 let winnerSum = [
 	['one','two','three'],
 	['four','five','six'],
@@ -126,7 +56,6 @@ block.forEach(i => {
 				greenWins = winnerSum.some(i => {
 					let checkCount = 0;
 					for (let j = 0; j < checkGreen.length; j++) {
-						console.log(i,j)
 						if (i.includes(checkGreen[j])) {
 							checkCount++;
 						}
